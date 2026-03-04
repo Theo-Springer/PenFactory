@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Pen Factory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="game-layout">
+        
+        <div class="column" id="stats-column">
+            <h1>Pen Factory</h1>
+            <p>Stylos en stock : <span id="pen-count">0</span></p>
+            <button id="btn-make-pen">Fabriquer 1 Stylo</button>
+            
+            <hr>
+            
+            <p>Argent : <span id="funds">0.00</span> €</p>
+            <p>Prix du stylo : <span id="pen-price">0.25</span> €</p>
+            <button id="btn-raise-price">Augmenter Prix</button>
+            <button id="btn-lower-price">Baisser Prix</button>
+            <p>Demande publique : <span id="demand">10</span>%</p>
+        </div>
+
+        <div class="column" id="resources-column">
+            <h2>Matériaux</h2>
+            <div class="resource-item">
+                <p>Plastique : <span id="plastic">500</span> unités</p>
+                <button id="btn-buy-plastic">Acheter Plastique (15€)</button>
+            </div>
+            <div class="resource-item">
+                <p>Encre : <span id="ink">500</span> ml</p>
+                <button id="btn-buy-ink">Acheter Encre (20€)</button>
+            </div>
+        </div>
+
+        <div class="column" id="projects-column">
+            <h2>Projets</h2>
+            <div id="project-list">
+                </div>
+        </div>
+
+    </div>
+
+    <script src="js/var.js"></script>
+    <script src="js/front/rendu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
