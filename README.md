@@ -13,7 +13,7 @@ Découvrir le développement front-end en construisant une interface interactive
 
 En créant ce jeu, je peux expérimenter les boucles de progression, les systèmes de ressources et les mechanics d’incrémentation dans un contexte concret, tout en consolidant mes compétences en JS et front-end.
 
-## Technologies utilisées
+## Langages utilisées
 
 JavaScript (ES6+) : logique du jeu, calculs, progression des ressources.
 
