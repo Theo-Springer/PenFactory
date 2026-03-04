@@ -1,5 +1,5 @@
 # FirstIncremental
-Petit projet personnel pour créer un jeu incrémental en JavaScript et explorer les concepts fondamentaux du développement front-end.
+Petit projet personnel pour créer un jeu incrémental en JavaScript et explorer les concepts du développement front-end.
 
 ## Objectif du projet
 
@@ -15,7 +15,7 @@ En créant ce jeu, je peux expérimenter les boucles de progression, les systèm
 
 ## Langages utilisées
 
-JavaScript (ES6+) : logique du jeu, calculs, progression des ressources.
+JavaScript : logique du jeu, calculs, progression des ressources.
 
 HTML / CSS : structure et style de l’interface utilisateur.
 
