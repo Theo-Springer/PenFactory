@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pen Factory</title>
 </head>
 <body>
-    <h1 id="main-title">Welcome to the Pen Factory</h1>
-    <div id="info">
-        <p id="description">Here you can find a variety of pens.</p>
+    <h1>Stylos : <span id="pen-count">0</span></h1>
+    
+    <div>
+        <button id="btn-make-pen">Fabriquer 1 Stylo</button>
     </div>
+
+    <div>
+        <h2>Actions</h2>
+        <hr>
+        <p>Argent : <span id="funds">0.00</span> €</p>
+        <p>Prix : <span id="pen-price">0.25</span> €</p>
+        <button id="btn-raise-price">Augmenter Prix</button>
+        <button id="btn-lower-price">Baisser Prix</button>
+        <p>Demande public : <span id="public-demand">50</span>%</p>
+    </div>
+
+    <div>
+        <h2>Ressources</h2>
+        <hr>
+        <p>Plastique : <span id="plastic">100</span></p>
+        <button id="btn-buy-plastic">Acheter Plastique</button>
+        <p>Encre : <span id="ink">100</span></p>
+        <button id="btn-buy-ink">Acheter Encre</button>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
