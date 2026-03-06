@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pen Factory</title>
 </head>
 <body>
@@ -16,6 +17,7 @@
         <h2>Actions</h2>
         <hr>
         <p>Argent : <span id="funds">0.00</span> €</p>
+        <p>Stylos en stock : <span id="pen-stock">0</span></p>
         <p>Prix : <span id="pen-price">0.25</span> €</p>
         <button id="btn-raise-price">Augmenter Prix</button>
         <button id="btn-lower-price">Baisser Prix</button>
@@ -31,6 +33,15 @@
         <button id="btn-buy-ink">Acheter Encre</button>
     </div>
 
+    <div>
+        <h2>Améliorations</h2>
+        <hr>
+        <p>Machine à Stylo : <span id="pen-machine-level">0</span></p>
+        <button id="btn-upgrade-pen-machine">Acheter une Machine à Stylo</button>
+    </div>
+
+    <script src="js/var.js"></script>
+    <script src="js/front/rendu.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
