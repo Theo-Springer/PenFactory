@@ -9,8 +9,7 @@ hr {
 div {
     box-sizing: border-box;
     width: 300px;
-    padding: 20px;
-    border: 1px solid #d30c0c;
+    /* border: 1px solid #d30c0c; */
     height: fit-content;
 }
 
@@ -29,3 +28,9 @@ button {
     cursor: pointer;
 }
 
+.terminal {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    width: 925px;
+}

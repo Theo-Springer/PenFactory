@@ -5,6 +5,7 @@ function updateDisplay() {
     document.getElementById('pen-stock').textContent = stockStylos;
     document.getElementById('plastic').textContent = nbPlastic;
     document.getElementById('ink').textContent = nbEncre;
+    document.getElementById('price').textContent = price.toFixed(2) + " €";
 }
 
 // Exporter la fonction pour l'utiliser dans main.js
