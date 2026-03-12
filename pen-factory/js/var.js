@@ -1,7 +1,4 @@
 // Fonction helper pour générer un nombre aléatoire
-function random(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 let nbStylos = 0;
 let nbEncre = 1000;
@@ -12,8 +9,14 @@ let price = 0.25;
 let prixPlastic = 10.0;
 let prixEncre = 10.0;
 let demande = 50;
+let multiplicateurDemande = 1.0;
 
 // Fonction pour changer les prix aléatoirement
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function randomizePrices() {
     prixPlastic = 10.0 + random(0, 15);
     prixEncre = 10.0 + random(0, 15);
