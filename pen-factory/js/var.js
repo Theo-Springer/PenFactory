@@ -10,6 +10,7 @@ let prixPlastic = 10.0;
 let prixEncre = 10.0;
 let demande = 50;
 let multiplicateurDemande = 1.0;
+let terminalOutput = "Bienvenue dans la Pen Factory ! ";
 
 // Fonction pour changer les prix aléatoirement
 

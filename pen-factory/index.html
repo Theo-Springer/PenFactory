@@ -12,9 +12,9 @@
         <p>.</p>
         <p>.</p>
         <p>.</p>
-        <p>> <span id="terminal-output">Bienvenue dans la Pen Factory ! </span><span class="cursor">_</span></p>
+        <p>> <span id="terminal-output" class="terminal-output"></span><span class="cursor">_</span></p>
     </div>
-    
+
     <h1>Stylos : <span id="pen-count">0</span></h1>
     
     <div>
@@ -43,13 +43,14 @@
         <button id="btn-buy-ink">Acheter Encre</button>
     </div>
 
-    <div>
+    <div id="upgrades-section" style="display: none;">
         <h2>Améliorations</h2>
         <hr>
         <p>Machine à Stylo : <span id="pen-machine-level">0</span></p>
         <button id="btn-buy-pen-machine">Acheter une Machine à Stylo</button>
     </div>
 
+    <script src="js/core/events.js"></script>
     <script src="js/front/rendu.js"></script>
     <script src="js/var.js"></script>
     <script src="js/main.js"></script>

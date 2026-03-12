@@ -9,7 +9,9 @@ function updateDisplay() {
     document.getElementById('PrixPlastic').textContent = prixPlastic.toFixed(2);
     document.getElementById('PrixEncre').textContent = prixEncre.toFixed(2);
     document.getElementById('demande').textContent = demande;
-    
+    document.getElementById('terminal-output').textContent = terminalOutput;    
+    // Vérifier la visibilité des sections
+    updateSectionsVisibility();
 }
 
 // Exporter la fonction pour l'utiliser dans main.js
