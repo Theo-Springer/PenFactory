@@ -6,6 +6,11 @@ hr {
     width: 250px;
 }
 
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
 div {
     box-sizing: border-box;
     width: 300px;
@@ -16,11 +21,6 @@ div {
 
 p {
     margin: 2.5px 0;
-}
-
-h2 {
-    margin: 0;
-    padding: 0;
 }
 
 button {

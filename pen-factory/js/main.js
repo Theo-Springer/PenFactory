@@ -1,5 +1,5 @@
-// Rafraîchir l'affichage toutes les secondes
-setInterval(updateDisplay, 1000);
+// Rafraîchir l'affichage
+setInterval(updateDisplay, 100);
 
 // Initialiser l'affichage au chargement
 updateDisplay();
@@ -8,7 +8,7 @@ updateDisplay();
 document.getElementById('btn-make-pen').addEventListener('click', function() {
     if (nbEncre >= 1 && nbPlastic >= 1) {
         nbStylos++;
-        StockStylos++;
+        stockStylos++;
         nbEncre--;
         nbPlastic--;
         updateDisplay();
@@ -16,19 +16,33 @@ document.getElementById('btn-make-pen').addEventListener('click', function() {
 });
 
 document.getElementById('btn-raise-price').addEventListener('click', function() {
-    // À implémenter
+    if (price < 50.0) {
+        price += 0.1;
+        updateDisplay();
+    }
 });
 
 document.getElementById('btn-lower-price').addEventListener('click', function() {
-    // À implémenter
+    if (price > 0.1) {
+        price -= 0.1;
+        updateDisplay();
+    }
 });
 
 document.getElementById('btn-buy-plastic').addEventListener('click', function() {
-    // À implémenter
+    if (money >= prixPlastic) {
+        money -= prixPlastic;
+        nbPlastic += 100;
+        updateDisplay();
+    }
 });
 
 document.getElementById('btn-buy-ink').addEventListener('click', function() {
-    // À implémenter
+    if (money >= prixEncre) {
+        money -= prixEncre;
+        nbEncre += 100;
+        updateDisplay();
+    }
 });
 
 document.getElementById('btn-upgrade-pen-machine').addEventListener('click', function() {
