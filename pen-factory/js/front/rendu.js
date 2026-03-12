@@ -8,6 +8,7 @@ function updateDisplay() {
     document.getElementById('pen-price').textContent = price.toFixed(2);
     document.getElementById('PrixPlastic').textContent = prixPlastic.toFixed(2);
     document.getElementById('PrixEncre').textContent = prixEncre.toFixed(2);
+    document.getElementById('demande').textContent = demande;
 }
 
 // Exporter la fonction pour l'utiliser dans main.js

@@ -17,14 +17,16 @@ document.getElementById('btn-make-pen').addEventListener('click', function() {
 
 document.getElementById('btn-raise-price').addEventListener('click', function() {
     if (price < 50.0) {
-        price += 0.1;
+        price += 0.01;
+        demande -= 2 * multiplicateurDemande;
         updateDisplay();
     }
 });
 
 document.getElementById('btn-lower-price').addEventListener('click', function() {
     if (price > 0.1) {
-        price -= 0.1;
+        price -= 0.01;
+        demande += 2 * multiplicateurDemande;
         updateDisplay();
     }
 });
@@ -45,6 +47,6 @@ document.getElementById('btn-buy-ink').addEventListener('click', function() {
     }
 });
 
-document.getElementById('btn-upgrade-pen-machine').addEventListener('click', function() {
+document.getElementById('btn-buy-pen-machine').addEventListener('click', function() {
     // À implémenter
 });

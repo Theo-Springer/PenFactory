@@ -11,6 +11,7 @@ let stockStylos = 0;
 let price = 0.25;
 let prixPlastic = 10.0;
 let prixEncre = 10.0;
+let demande = 50;
 
 // Fonction pour changer les prix aléatoirement
 function randomizePrices() {
