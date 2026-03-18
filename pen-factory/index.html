@@ -17,43 +17,58 @@
 
     <h1>Stylos : <span id="pen-count">0</span></h1>
     
-    <div>
-        <button id="btn-make-pen">Fabriquer 1 Stylo</button>
+    <div class="c1">
+        <div>
+            <button id="btn-make-pen">Fabriquer 1 Stylo</button>
+        </div>
+
+        <div>
+            <h2>Actions</h2>
+            <hr>
+            <p>Argent : <span id="funds">0.00</span> €</p>
+            <p>Stylos en stock : <span id="pen-stock">0</span></p>
+            <p>Prix : <span id="pen-price">0.25</span> €</p>
+            <button id="btn-raise-price">Augmenter Prix</button>
+            <button id="btn-lower-price">Baisser Prix</button>
+            <p>Demande public : <span id="demande">50</span>%</p>
+        </div>
+
+        <div>
+            <h2>Ressources</h2>
+            <hr>
+            <p>Plastique : <span id="plastic">100</span></p>
+            <p>Prix : <span id="PrixPlastic">10.00</span> €</p>
+            <button id="btn-buy-plastic">Acheter Plastique</button>
+            <p>Encre : <span id="ink">100</span></p>
+            <p>Prix : <span id="PrixEncre">10.00</span> €</p>
+            <button id="btn-buy-ink">Acheter Encre</button>
+        </div>
+
+        <div id="upgrades-section" style="display: none;">
+            <h2>Automatisation</h2>
+            <hr>
+            <p>Machine à Stylo : <span id="pen-machine-level"></span></p>
+            <p>Prix : <span id="prixPenMachine">10.00</span> €</p>
+            <button id="btn-buy-pen-machine">Acheter une Machine à Stylo</button>
+        </div>
     </div>
 
-    <div>
-        <h2>Actions</h2>
-        <hr>
-        <p>Argent : <span id="funds">0.00</span> €</p>
-        <p>Stylos en stock : <span id="pen-stock">0</span></p>
-        <p>Prix : <span id="pen-price">0.25</span> €</p>
-        <button id="btn-raise-price">Augmenter Prix</button>
-        <button id="btn-lower-price">Baisser Prix</button>
-        <p>Demande public : <span id="demande">50</span>%</p>
+    <div class="c2">
+        <div id="upgrades-section2" style="display: none;">
+            <h2>Améliorations</h2>
+            <hr>
+            <p>Choisir une amélioration : <span id="upgrade-choice"></span></p>
+            <button id="btn-buy-upgrade">Acheter une Amélioration</button>
+        </div>
     </div>
 
-    <div>
-        <h2>Ressources</h2>
-        <hr>
-        <p>Plastique : <span id="plastic">100</span></p>
-        <p>Prix : <span id="PrixPlastic">10.00</span> €</p>
-        <button id="btn-buy-plastic">Acheter Plastique</button>
-        <p>Encre : <span id="ink">100</span></p>
-        <p>Prix : <span id="PrixEncre">10.00</span> €</p>
-        <button id="btn-buy-ink">Acheter Encre</button>
+    <div class="c3">
     </div>
 
-    <div id="upgrades-section" style="display: none;">
-        <h2>Améliorations</h2>
-        <hr>
-        <p>Machine à Stylo : <span id="pen-machine-level">0</span></p>
-        <button id="btn-buy-pen-machine">Acheter une Machine à Stylo</button>
-    </div>
-
+    <script src="js/front/rendu.js"></script>
     <script src="js/var.js"></script>
     <script src="js/core/calcul.js"></script>
     <script src="js/core/events.js"></script>
-    <script src="js/front/rendu.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

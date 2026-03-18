@@ -10,9 +10,12 @@ function updateDisplay() {
     document.getElementById('PrixEncre').textContent = prixEncre.toFixed(2);
     document.getElementById('demande').textContent = demande;
     document.getElementById('terminal-output').textContent = terminalOutput;
+    document.getElementById('pen-machine-level').textContent = penmachineLevel;
+    document.getElementById('prixPenMachine').textContent = prixPenMachine.toFixed(2);
     
     // Vérifier la visibilité des sections
     updateSectionsVisibility();
+    updateSectionsVisibility2();
 }
 
 // Exporter la fonction pour l'utiliser dans main.js
