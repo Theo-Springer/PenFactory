@@ -1,8 +1,4 @@
-// Fonction helper pour générer un nombre aléatoire
-
 let nbStylos = 998;
-let nbEncre = 1000;
-let nbPlastic = 1000;
 let money = 110;
 let stockStylos = 0;
 let price = 0.25;
@@ -13,6 +9,12 @@ let penmachineLevel = 0;
 let prixPenMachine = 10.0;
 let multiplicateurDemande = 1.0;
 let terminalOutput = "Bienvenue dans la Pen Factory ! ";
+
+// Ressources pour les améliorations
+let memory = 0;
+let creativity = 0;
+let nbEncre = 1000;
+let nbPlastic = 1000;
 
 // Fonction pour changer les prix aléatoirement
 

@@ -13,6 +13,14 @@ function updateDisplay() {
     document.getElementById('pen-machine-level').textContent = penmachineLevel;
     document.getElementById('prixPenMachine').textContent = prixPenMachine.toFixed(2);
     
+    // Afficher mémoire et créativité
+    if (document.getElementById('memory')) {
+        document.getElementById('memory').textContent = memory + " / 1000";
+    }
+    if (document.getElementById('creativity')) {
+        document.getElementById('creativity').textContent = creativity;
+    }
+    
     // Vérifier la visibilité des sections
     updateSectionsVisibility();
     updateSectionsVisibility2();

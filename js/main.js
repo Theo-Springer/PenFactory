@@ -1,6 +1,5 @@
-// Attendre que le DOM soit chargé avant de configurer les événements
 document.addEventListener('DOMContentLoaded', function() {
-    // Exemples d'événements pour les boutons
+
     document.getElementById('btn-make-pen').addEventListener('click', function() {
         if (nbEncre >= 1 && nbPlastic >= 1) {
             nbStylos++;
