@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             money -= 10 + 2 * penmachineLevel;
             prixPenMachine = 10 + 2 * penmachineLevel;
             penmachineLevel++;
+            startPenMachine();  // Lancer une nouvelle boucle pour cette machine
             updateDisplay();
         }
     });
@@ -54,6 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Rafraîchir l'affichage
     setInterval(updateDisplay, 100);
 
-    // Initialiser l'affichage au chargement
+    randomizePrices();
     updateDisplay();
 });
