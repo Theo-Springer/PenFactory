@@ -6,7 +6,6 @@ function venteStylos(price) {
     updateDisplay();
 }
 
-// Fonction pour démarrer une nouvelle boucle de machine
 function startPenMachine() {
     let intervalId = setInterval(() => {
         if (nbEncre >= 1 && nbPlastic >= 1) {
