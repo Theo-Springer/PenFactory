@@ -12,6 +12,7 @@ function updateDisplay() {
     document.getElementById('terminal-output').textContent = terminalOutput;
     document.getElementById('pen-machine-level').textContent = penmachineLevel;
     document.getElementById('prixPenMachine').textContent = prixPenMachine.toFixed(2);
+    document.getElementById('trust').textContent = trust;
     
     // Afficher mémoire et créativité
     if (document.getElementById('memory')) {

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('btn-buy-plastic').addEventListener('click', function() {
         if (money >= prixPlastic) {
             money -= prixPlastic;
-            nbPlastic += 100;
+            nbPlastic += 1000;
             updateDisplay();
         }
     });
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('btn-buy-ink').addEventListener('click', function() {
         if (money >= prixEncre) {
             money -= prixEncre;
-            nbEncre += 100;
+            nbEncre += 1000;
             updateDisplay();
         }
     });
@@ -48,6 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
             prixPenMachine = 10 + 2 * penmachineLevel;
             penmachineLevel++;
             startPenMachine();  // Lancer une nouvelle boucle pour cette machine
+            updateDisplay();
+        }
+    });
+
+    document.getElementById('btn-buy-memory').addEventListener('click', function() {
+        if (trust >=1) {
+            trust -= 1;
+            memoryUpgrade += 1000;
             updateDisplay();
         }
     });

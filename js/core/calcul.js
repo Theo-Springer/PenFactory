@@ -1,8 +1,7 @@
 function venteStylos(price) {
-    while (stockStylos > 0) {
-        money += price;
-        stockStylos -= 1;
-    }
+    let vente = Math.floor(stockStylos * Math.max(demande, 0) / 100);
+    money += vente * price;
+    stockStylos -= vente;
     updateDisplay();
 }
 
@@ -20,6 +19,9 @@ function startPenMachine() {
 
 function accumulateMemory() {
     memory += 1;
+    if (memory > memoryUpgrade) {
+        memory = memoryUpgrade; // Limite la mémoire à 1000
+    }
     
     if (memory >= 1000) {
         creativity += 1;
@@ -29,7 +31,7 @@ function accumulateMemory() {
 // Appeler venteStylos automatiquement toutes les secondes
 setInterval(() => {
     venteStylos(price);
-}, 1000);
+}, 100);
 
 setInterval(() => {
     accumulateMemory();

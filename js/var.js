@@ -1,4 +1,4 @@
-let nbStylos = 998;
+let nbStylos = 999;
 let stockStylos = 0;
 let price = 0.25;
 let prixPlastic = 10.0;
@@ -8,13 +8,15 @@ let penmachineLevel = 0;
 let prixPenMachine = 10.0;
 let multiplicateurDemande = 1.0;
 let terminalOutput = "Bienvenue dans la Pen Factory ! ";
+let memoryUpgrade = 1000;
 
 // Ressources pour les améliorations
-let memory = 0;
+let memory = 980;
 let creativity = 0;
 let nbEncre = 1000;
 let nbPlastic = 1000;
 let money = 110;
+let trust = 0;
 
 // Tableau pour stocker les intervals des machines
 let machineIntervals = [];
