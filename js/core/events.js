@@ -1,4 +1,8 @@
+// =========================================
+// GESTION DE LA VISIBILITÉ DES SECTIONS
+// =========================================
 
+// Afficher la section automatisation à 100 stylos
 function updateSectionsVisibility() {
     const upgradesSection = document.getElementById('upgrades-section');
     if (nbStylos >= 100) {
@@ -9,6 +13,7 @@ function updateSectionsVisibility() {
     }
 }
 
+// Afficher la section améliorations à 1000 stylos
 function updateSectionsVisibility2() {
     const upgradesSection2 = document.getElementById('upgrades-section2');
     if (nbStylos >= 1000) {
@@ -19,6 +24,7 @@ function updateSectionsVisibility2() {
     }
 }
 
+// Afficher la section super machine à 2500 stylos
 function updateSectionsVisibility3() {
     const upgradesSection3 = document.getElementById('upgrades-section3');
     if (nbStylos >= 2500) {
@@ -29,6 +35,7 @@ function updateSectionsVisibility3() {
     }
 }
 
+// Exporter les fonctions globalement
 window.updateSectionsVisibility = updateSectionsVisibility;
 window.updateSectionsVisibility2 = updateSectionsVisibility2;
 window.updateSectionsVisibility3 = updateSectionsVisibility3;

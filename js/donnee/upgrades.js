@@ -1,73 +1,61 @@
-function upgrade_machine_boost() {
-    return {
+// =========================================
+// DONNÉES DES AMÉLIORATIONS
+// =========================================
+
+const upgrades = [
+    {
         id: "machine_boost",
-        Name: "Optimisation des machines",
-        Description: "Augmente la production de 20%",
+        name: "Optimisation des machines",
+        description: "Augmente la production de 20%",
         memoryCost: 100,
         creativityCost: 0,
-        Effect: 0.2,
+        effect: 0.2,
         type: "production"
-    };
-}
-
-function upgrade_ink_quality() {
-    return {
-        id: "ink_quality",
-        Name: "Formule d'encre optimisée",
-        Description: "Réduit la consommation d'encre de 15%",
-        memoryCost: 250,
-        creativityCost: 0,
-        Effect: 0.15,
-        type: "consumption"
-    };
-}
-
-function upgrade_plastic_quality() {
-    return {
-        id: "plastic_quality",
-        Name: "Formule de plastique optimisée",
-        Description: "Réduit la consommation de plastique de 15%",
-        memoryCost: 250,
-        creativityCost: 0,
-        Effect: 0.15,
-        type: "consumption"
-    };
-}
-
-function poeme() {
-    return {
+    },
+    {
         id: "poeme",
-        Name: "Poème",
-        Description: "Vous ecrivez un poème pour les employer",
+        name: "Poème",
+        description: "Vous écrivez un poème pour les employés",
         memoryCost: 0,
         creativityCost: 100,
-        Effect: 0.2,
+        effect: 1,
         type: "trust"
-    };
-}
-
-
-function upgrade_marketing() {
-    return {
+    },
+    {
         id: "marketing",
-        Name: "Stratégie marketing créative",
-        Description: "Augmente la demande de 25%",
+        name: "Stratégie marketing créative",
+        description: "Augmente la demande de 25%",
         memoryCost: 500,
         creativityCost: 50,
-        Effect: 0.25,
+        effect: 0.25,
         type: "demand"
-    };
+    },
+    {
+        id: "innovation",
+        name: "Processus innovant",
+        description: "Double la vitesse de production",
+        memoryCost: 1500,
+        creativityCost: 40,
+        effect: 1.0,
+        type: "production"
+    }
+];
+
+// =========================================
+// FONCTIONS UTILITAIRES
+// =========================================
+
+function getUpgrade(id) {
+    return upgrades.find(u => u.id === id);
 }
 
-// Amélioration 6 : Processus de fabrication innovant
-function upgrade_innovation() {
-    return {
-        id: "innovation",
-        Name: "Processus innovant",
-        Description: "Double la vitesse de production",
-        memoryCost: 80,
-        creativityCost: 40,
-        Effect: 1.0,
-        type: "production"
-    };
+function getAllUpgrades() {
+    return upgrades;
 }
+
+// =========================================
+// EXPORTS GLOBAUX
+// =========================================
+
+window.getUpgrade = getUpgrade;
+window.getAllUpgrades = getAllUpgrades;

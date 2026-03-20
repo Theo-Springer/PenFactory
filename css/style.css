@@ -81,3 +81,58 @@ button {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+/* Cartes des améliorations */
+#upgrade-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+    width: 100%;
+}
+
+.upgrade-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 1px 0;
+    cursor: pointer;
+    border: 2.5px solid #000;
+}
+
+.upgrade-header {
+    margin: 0;
+    padding: 0;
+}
+
+.upgrade-header h3 {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 12px;
+}
+
+.upgrade-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.upgrade-body p {
+    margin: 0;
+    font-size: 12px;
+    color: #333;
+}
+
+.upgrade-costs {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 10px;
+    color: #666;
+}
+
+.cost-item {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
