@@ -14,22 +14,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function setupEventListeners() {
     // Production manuelle
-    document.getElementById('btn-make-pen').addEventListener('click', handleMakePen);
+    const btnMakePen = document.getElementById('btn-make-pen');
+    if (btnMakePen) btnMakePen.addEventListener('click', handleMakePen);
     
     // Gestion des prix
-    document.getElementById('btn-raise-price').addEventListener('click', handleRaisePrice);
-    document.getElementById('btn-lower-price').addEventListener('click', handleLowerPrice);
+    const btnRaisePrice = document.getElementById('btn-raise-price');
+    if (btnRaisePrice) btnRaisePrice.addEventListener('click', handleRaisePrice);
+    
+    const btnLowerPrice = document.getElementById('btn-lower-price');
+    if (btnLowerPrice) btnLowerPrice.addEventListener('click', handleLowerPrice);
     
     // Achat de ressources
-    document.getElementById('btn-buy-plastic').addEventListener('click', handleBuyPlastic);
-    document.getElementById('btn-buy-ink').addEventListener('click', handleBuyInk);
+    const btnBuyPlastic = document.getElementById('btn-buy-plastic');
+    if (btnBuyPlastic) btnBuyPlastic.addEventListener('click', handleBuyPlastic);
+    
+    const btnBuyInk = document.getElementById('btn-buy-ink');
+    if (btnBuyInk) btnBuyInk.addEventListener('click', handleBuyInk);
     
     // Achat de machines
-    document.getElementById('btn-buy-pen-machine').addEventListener('click', handleBuyPenMachine);
+    const btnBuyPenMachine = document.getElementById('btn-buy-pen-machine');
+    if (btnBuyPenMachine) btnBuyPenMachine.addEventListener('click', handleBuyPenMachine);
     
     // Améliorations mémoire
-    document.getElementById('btn-buy-memory').addEventListener('click', handleBuyMemory);
-    document.getElementById('btn-upgrade-memory').addEventListener('click', handleUpgradeMemory);
+    const btnUpgradeMemory = document.getElementById('btn-upgrade-memory');
+    if (btnUpgradeMemory) btnUpgradeMemory.addEventListener('click', handleUpgradeMemory);
 }
 
 function setupGameLoops() {
