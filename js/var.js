@@ -54,5 +54,3 @@ function changePrices() {
 
 window.changePrices = changePrices;
 
-changePrices;
-
